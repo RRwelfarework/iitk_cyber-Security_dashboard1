@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Video -->
+    <video class="background-video" autoplay loop muted>
+        <source src="./videoplayback.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+
+  <div id="app">
+    <header class="main-header">
+      <h1>Cybersecurity Dashboard</h1>
+      <div class="header-controls">
+        <button id="theme-toggle">Toggle Theme</button>
+      </div>
+    </header>
+
+    <main class="dashboard">
+      <aside class="sidebar">
+        <ul>
+          <li>Real-Time Alerts</li>
+          <li>Threat Intelligence</li>
+          <li>Incident Management</li>
+          <li>Settings</li>
+        </ul>
+      </aside>
+
+      <section class="main-content">
+        <div class="visualization">
+          <h2>Threat Map</h2>
+          <canvas id="threatMap"></canvas>
+        </div>
+        <div class="analytics">
+          <h2>Analytics Overview</h2>
+          <div class="widget" id="traffic-widget"></div>
+          <div class="widget" id="breach-widget"></div>
+        </div>
+      </section>
+
+      <div class="chatbot" id="chatbot">
+        <h3>AI Assistant</h3>
+        <textarea placeholder="Ask a cybersecurity question..."></textarea>
+        <button>Send</button>
+      </div>
+    </main>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Cybersecurity Solutions Dashboard</h1>
+    </header>
+
+    <!-- Real-Time Threat Detection Section -->
+    <section class="threats-dashboard">
+        <h2>Real-Time Cyber Threat Dashboard</h2>
+        <div id="threats-list" class="threats-list">
+            <h3>Real-Time Threats:</h3>
+            <ul id="threats"></ul>
+        </div>
+        <div class="alerts">
+            <h3>Security Alerts:</h3>
+            <div id="alert-box" class="alert-box"></div>
+        </div>
+    </section>
+
+    <!-- Web 3.0 Identity Management Section -->
+    <section class="identity-management">
+        <h2>Web 3.0 Decentralized Identity</h2>
+        <button id="generate-qr">Generate QR Code</button>
+        <div id="qr-code" class="qr-code"></div>
+        <div id="status" class="status"></div>
+    </section>
+
+    <!-- Phishing Detection Section -->
+    <section class="phishing-detection">
+        <h2>Real-Time Phishing Detection</h2>
+        <p id="status-phishing">Scanning page for phishing attempts...</p>
+        <button id="check-website">Check Website for Phishing</button>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
